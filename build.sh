@@ -6,7 +6,7 @@ echo ------------------------------------
 
 mkdir build
 
-cmake . build
+cmake -S . -B build
 make build
 
 echo ------------------------------------
