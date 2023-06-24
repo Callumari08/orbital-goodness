@@ -1,9 +1,20 @@
-cmake_minimum_required(VERSION 3.13)  # CMake version check
-project(orbital-goodness)             # Create project "orbital-goodness"
-set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
+cmake_minimum_required(VERSION 3.12)
+project(orbital-goodness)
 
-# Add main.cpp file of project root directory as source file
-set(SOURCE_FILES main.cpp)
+# Find GLFW
+find_package(glfw3 REQUIRED)
 
-# Add executable target with source files listed in SOURCE_FILES variable
-add_executable(orbital-goodness ${SOURCE_FILES})
+# Find GLEW
+find_package(GLEW REQUIRED)
+
+# Find OpenGL
+find_package(OpenGL REQUIRED)
+
+# Set source files
+set(SOURCES main.cpp)
+
+# Create the executable
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Link against GLFW, GLEW, and OpenGL
+target_link_libraries(${PROJECT_NAME} glfw GLEW::GLEW ${OPENGL_LIBRARIES})
