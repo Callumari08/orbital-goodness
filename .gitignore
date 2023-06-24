@@ -1,4 +1,8 @@
-#CMake
+# Project Specific
+build
+orbital-goodness
+
+# CMake
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -11,7 +15,7 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-#Visual Studio Code
+# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
