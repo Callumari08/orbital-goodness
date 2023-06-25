@@ -1,7 +1,7 @@
-#!/bin/bash
+@echo off
 
-# Linux Only
-# See build.bat for Windows.
+REM Windows Only
+REM See build.sh for Linux
 
 echo Building...
 
@@ -11,7 +11,7 @@ mkdir build
 
 cmake -S . -B build
 cd build
-make
+cmake --build .
 
 echo ------------------------------------
 

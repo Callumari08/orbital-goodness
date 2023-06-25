@@ -11,7 +11,7 @@ find_package(GLEW REQUIRED)
 find_package(OpenGL REQUIRED)
 
 # Set source files
-set(SOURCES render/main.cpp)
+set(SOURCES render)
 
 # Create the executable
 add_executable(${PROJECT_NAME} ${SOURCES})
