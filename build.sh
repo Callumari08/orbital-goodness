@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# linux ONLY, Windows batch file to come.
+
 echo Building...
 
 echo ------------------------------------
