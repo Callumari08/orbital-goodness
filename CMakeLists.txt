@@ -13,8 +13,6 @@ find_package(OpenGL REQUIRED)
 # Set source files
 set(SOURCES render/main.cpp)
 
-# Create the executable
+# Link against GLFW, GLEW, OpenGL
 add_executable(${PROJECT_NAME} ${SOURCES})
-
-# Link against GLFW, GLEW, and OpenGL
 target_link_libraries(${PROJECT_NAME} glfw GLEW::GLEW ${OPENGL_LIBRARIES})

@@ -7,10 +7,13 @@ echo Building...
 
 echo ------------------------------------
 
+rm -r build
+
 mkdir build
 
 cmake -S . -B build
 cd build
+echo Making...
 make
 
 echo ------------------------------------
